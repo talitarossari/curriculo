@@ -112,7 +112,7 @@ class Endereco():
 class Candidatx():
     def __init__(
         self, nome=None, idade=None, telefone=None,
-        endereco=None, email=None, objetivo=None,
+        endereco=None, email=None, resumo=None,
         adicional=None, estado_civil=None
     ):
         self.nome = nome
@@ -121,7 +121,7 @@ class Candidatx():
         self.telefone = telefone
         self.endereco = endereco
         self.email = email
-        self.objetivo = objetivo
+        self.resumo = resumo
         self.adicional = adicional
         self.experiencias = []
         self.formacoes = []
@@ -158,7 +158,7 @@ como parâmetro"""
             str(self.estado_civil) + ", " + str(self.idade) + " anos.\n" +
             str(self.endereco) + "\n" + "Telefone: " +
             str(self.telefone) + " / E-mail: " + str(self.email) + "\n" +
-            "\nOBJETIVO\n" + str(self.objetivo) + "\n" +
+            "\nRESUMO\n" + str(self.resumo) + "\n" +
             "\nRESUMO DAS QUALIFICAÇÕES\n" + str(self.qualificacao) + "\n" +
             "\nFORMAÇÃO\n" + str(mostrarArray(self.formacoes)) + "\n" +
             "\nEXPERIÊNCIA PROFISSIONAL\n" +

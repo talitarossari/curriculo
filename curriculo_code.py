@@ -15,8 +15,12 @@ candidatx.endereco = models.Endereco(
     "Servidão Jatobá", "294", "AP01"
 )
 
-# Objetivo
-candidatx.objetivo = "Estágio na área de desenvolvimento de software"
+# Resumo
+candidatx.resumo = "Técnica em Informatica pela instituição SENAI/SC. \n\
+Graduanda em Analise e Desenvolvimento de Sistema pela instituição \
+SENAI/SC. Com experiencia na área de Tecnologia da Informação, com ênfase \
+em Desenvolvimento WEB.\n\
+Co-organizadora das PyLadies Floripa."
 
 # Qualificações
 candidatx.addQualificacao(
@@ -41,7 +45,7 @@ candidatx.qualificacao.addLinguagem(
         "Python", "Um ano de experiência",
         ["Bibliotecas padrões", "Django", "Flask",
          "Tornado", """Pacote Data Science (Pandas, Matplotlib, Scipy, \
-Numpy) - Ultimos dois meses de pesquisa"""]
+Numpy)"""]
     )
 )
 candidatx.qualificacao.addLinguagem(
@@ -56,7 +60,7 @@ candidatx.qualificacao.addLinguagem(
         ["Bibliotecas Padrões", "ggplot2"]
     )
 )
-candidatx.qualificacao.resumo = """Conhecimento de paradigma Orientado à Objetos,\
+candidatx.qualificacao.resumo = """Conhecimento de paradigma Orientado à Objetos, \
 bancos de dados SQL, desenvolvimento web. Iniciando pesquisa no campo de Data Science."""
 
 # Formação
@@ -64,33 +68,25 @@ candidatx.addFormacao(
     models.Formacao(
         "Superior de Tecnologia em Análise e Desenvolvimento de Sistemas",
         "Serviço Nacional de Aprendizagem Industrial - SENAI",
-        "Terceiro Semestre", "Previsão de conclusao: 2018/1"
+        "Terceiro Semestre", "Previsão de conclusão: 2018/1"
     )
 )
 candidatx.addFormacao(
     models.Formacao(
-        "Tecnico em Informatica - Programação",
+        "Técnico em Informatica - Programação",
         "Serviço Nacional de Aprendizagem Industrial - SENAI",
-        "Concluido", "Concluido em 2015/1"
+        "Concluído", "Concluído em 2015/1"
     )
 )
 
 # Experiencia
 candidatx.addExperiencia(
     models.Experiencia(
-        "01/12/2014", "31/08/2015",
-        "Serviço Nacional de Aprendizagem Industrial - SENAI",
-        "Estagiária", """Desenvolvimento de recursos didáticos, produção dos \
-cursos da modalidade à distância na plataforma SCORM, utilizando JavaScript nativo."""
-    )
-)
-candidatx.addExperiencia(
-    models.Experiencia(
         "01/09/2015", "Atual",
         "CIANET", "Estagiária Full Stack",
         """Desenvolvimento de serviços web com Django e Flask, e API RESTFUL \
 com Tornado. Desenvolvimento de aplicativos mobile utilizando o Ionic. \
-Conduzindo um estudo no campo de Data Science, utilizando Python, através do PyData, \
+Conduzindo um estudo no campo de Data Science, utilizando Python, através do PyData \
 e a linguagem R.  Conduzindo um estudo na área de BI e Data Analytics."""
     )
 )
@@ -109,6 +105,14 @@ candidatx.addExperiencia(
         "IFSC", "Professora",
         """Ministrar aula básica de Python com foco em desenvolvimento WEB, \
 utilizando o Framework Django."""
+    )
+)
+candidatx.addExperiencia(
+    models.Experiencia(
+        "01/12/2014", "31/08/2015",
+        "Serviço Nacional de Aprendizagem Industrial - SENAI",
+        "Estagiária", """Desenvolvimento de recursos didáticos, produção dos \
+cursos da modalidade à distância na plataforma SCORM, utilizando JavaScript nativo."""
     )
 )
 
