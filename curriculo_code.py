@@ -56,7 +56,7 @@ candidatx.qualificacao.addLinguagem(
 )
 candidatx.qualificacao.addLinguagem(
     models.Linguagem(
-        "R Linguage", "Um mês, ainda em pesquisa",
+        "R Language", "Um mês, ainda em pesquisa",
         ["Bibliotecas Padrões", "ggplot2"]
     )
 )
